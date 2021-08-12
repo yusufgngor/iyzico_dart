@@ -1,4 +1,4 @@
-import 'package:iyzico/iyzipackage.dart';
+import 'package:iyzico/iyzico.dart';
 
 class BasketItemBuilder {
   final String _id = 'BI101';

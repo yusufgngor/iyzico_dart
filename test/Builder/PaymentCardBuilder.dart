@@ -1,4 +1,4 @@
-import 'package:iyzico/iyzipackage.dart';
+import 'package:iyzico/iyzico.dart';
 
 class PaymentCardBuilder {
   final String _cardHolderName = 'John Doe';

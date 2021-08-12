@@ -1,4 +1,4 @@
-import 'package:iyzico/iyzipackage.dart';
+import 'package:iyzico/iyzico.dart';
 
 import '../AddressBuilder.dart';
 import '../BasketItemBuilder.dart';

@@ -1,4 +1,4 @@
-import 'package:iyzico/iyzipackage.dart';
+import 'package:iyzico/iyzico.dart';
 import 'package:iyzico/src/iyizico/models/Currency.dart';
 import 'package:iyzico/src/iyizico/models/Payment/PaymentChannel.dart';
 import 'package:iyzico/src/iyizico/models/Payment/PaymentGroup.dart';

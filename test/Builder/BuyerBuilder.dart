@@ -1,4 +1,4 @@
-import 'package:iyzico/iyzipackage.dart';
+import 'package:iyzico/iyzico.dart';
 
 class BuyerBuilder {
   final String id = 'BY789';

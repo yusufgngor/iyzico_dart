@@ -5,7 +5,7 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
-import 'package:iyzico/iyzipackage.dart';
+import 'package:iyzico/iyzico.dart';
 
 import '../MyConstants.dart';
 import 'package:test/test.dart';

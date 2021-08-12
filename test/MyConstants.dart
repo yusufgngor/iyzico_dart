@@ -1,4 +1,4 @@
-import 'package:iyzico/iyzipackage.dart';
+import 'package:iyzico/iyzico.dart';
 
 final options = IyziConfig(
     'sandbox-aHYVflgQYVBtt6llDZrt30NwFGgBu63a',
