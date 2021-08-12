@@ -1,3 +1,4 @@
-## 1.0.0
+## 0.1.0
 
-- Initial version.
+- First Publising
+- Paymnet, Bin, Intallment, 3D Payment, CheoutForm Request included
