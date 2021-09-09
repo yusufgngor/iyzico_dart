@@ -1,30 +1,30 @@
 import 'package:iyzico/iyzico.dart';
 
 Future<void> main() async {
-// Set up your iyzico configurations
+//Set up your iyzico configurations
   const iyziConfig = IyziConfig(
       'sandbox-aHYVflgQYVBtt6llDZrt30NwFGgBu63a',
       'sandbox-5vFnPaU7zksagqiZXq8q7xdIjlFFGJaO',
       'https://sandbox-api.iyzipay.com');
 
-  // Create an iyzico object
+  //Create an iyzico object
   final iyzico = Iyzico.fromConfig(configuration: iyziConfig);
 
-  //requesting bin number
-  final binResult = await iyzico.retrieveBinNumberRequest(binNumber: '542119');
-  print(binResult);
+  // //requesting bin number
+  // final binResult = await iyzico.retrieveBinNumberRequest(binNumber: '542119');
+  // print(binResult);
 
-  //requesting Installment Info
+  // //requesting Installment Info
 
-  final installmentResult =
-      await iyzico.retrieveInstallmentInfoRequest(price: 10);
-  print(installmentResult);
+  // final installmentResult =
+  //     await iyzico.retrieveInstallmentInfoRequest(price: 10);
+  // print(installmentResult);
 
-  final installmentResult2 = await iyzico.retrieveInstallmentInfoRequest(
-      price: 10, binNumber: '542119');
-  print(installmentResult2);
+  // final installmentResult2 = await iyzico.retrieveInstallmentInfoRequest(
+  //     price: 10, binNumber: '542119');
+  // print(installmentResult2);
 
-  // Create Payment Request
+  //Create Payment Request
 
   // ignore: omit_local_variable_types
   final double price = 1;
@@ -85,16 +85,16 @@ Future<void> main() async {
         category2: 'Usb / Cable',
         itemType: BasketItemType.PHYSICAL),
   ];
-  final paymentResult = await iyzico.CreatePaymentRequest(
-      price: 1.0,
-      paidPrice: 1.1,
-      paymentCard: paymentCard,
-      buyer: buyer,
-      shippingAddress: shippingAddress,
-      billingAddress: billingAddress,
-      basketItems: basketItems);
+  // final paymentResult = await iyzico.CreatePaymentRequest(
+  //     price: 1.0,
+  //     paidPrice: 1.1,
+  //     paymentCard: paymentCard,
+  //     buyer: buyer,
+  //     shippingAddress: shippingAddress,
+  //     billingAddress: billingAddress,
+  //     basketItems: basketItems);
 
-  print(paymentResult);
+  // print(paymentResult);
 
   // Initialize 3DS PAYMENT REQUEST
 
@@ -111,26 +111,26 @@ Future<void> main() async {
   );
   print(initializeThreeds);
 
-  // Create 3DS payment requesr
-  final createThreedsRequest = await iyzico.createThreedsPaymentRequest(
-      paymentConversationId: '123456789');
-  print(createThreedsRequest);
+  // // Create 3DS payment requesr
+  // final createThreedsRequest = await iyzico.createThreedsPaymentRequest(
+  //     paymentConversationId: '123456789');
+  // print(createThreedsRequest);
 
-  // Init Checkout Form
+  // // Init Checkout Form
 
-  final initChecoutForm = await iyzico.initializeCheoutForm(
-      price: price,
-      paidPrice: paidPrice,
-      paymentCard: paymentCard,
-      buyer: buyer,
-      shippingAddress: shippingAddress,
-      billingAddress: billingAddress,
-      basketItems: basketItems,
-      callbackUrl: 'www.test.com',
-      enabledInstallments: []);
-  print(initChecoutForm);
+  // final initChecoutForm = await iyzico.initializeCheoutForm(
+  //     price: price,
+  //     paidPrice: paidPrice,
+  //     paymentCard: paymentCard,
+  //     buyer: buyer,
+  //     shippingAddress: shippingAddress,
+  //     billingAddress: billingAddress,
+  //     basketItems: basketItems,
+  //     callbackUrl: 'www.test.com',
+  //     enabledInstallments: []);
+  // print(initChecoutForm);
 
-  final retrieveCheckoutForm =
-      await iyzico.retrieveCheckoutForm(token: 'token');
-  print(retrieveCheckoutForm);
+  // final retrieveCheckoutForm =
+  //     await iyzico.retrieveCheckoutForm(token: 'token');
+  // print(retrieveCheckoutForm);
 }

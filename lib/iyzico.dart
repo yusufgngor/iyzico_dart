@@ -25,5 +25,4 @@ export 'src/iyizico/request/InitializeThreedsPaymentRequest.dart';
 export 'src/iyizico/request/InstallmentInfoRequest.dart';
 export 'src/iyizico/request/CheckoutForm/RetrieveCheckoutFormRequest.dart';
 
-
 // TODO: Export any libraries intended for clients of this package.
