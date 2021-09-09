@@ -20,9 +20,9 @@ export 'src/iyizico/models/Payment/Buyer.dart';
 export 'src/iyizico/request/PaymentRequest.dart';
 
 export 'src/iyizico/request/BinNumberRequest.dart';
-export 'src/iyizico/request/CreateCheckoutFormInitializeRequest.dart';
+export 'src/iyizico/request/CheckoutForm/CreateCheckoutFormInitializeRequest.dart';
 export 'src/iyizico/request/InitializeThreedsPaymentRequest.dart';
 export 'src/iyizico/request/InstallmentInfoRequest.dart';
-export 'src/iyizico/request/RetrieveCheckoutFormRequest.dart';
+export 'src/iyizico/request/CheckoutForm/RetrieveCheckoutFormRequest.dart';
 
 // TODO: Export any libraries intended for clients of this package.

@@ -50,7 +50,7 @@ class PaymentRequest extends BaseRequest {
   Map<String, dynamic> toJson() {
     final data = <String, dynamic>{};
     data.addAll(super.toJson());
-    data['price'] = '1.0';
+    data['price'] = price;
     data['paidPrice'] = paidPrice;
     if (installment != null) data['installment'] = installment;
     if (paymentChannel != null) data['paymentChannel'] = paymentChannel;
@@ -87,8 +87,8 @@ class PaymentRequest extends BaseRequest {
         .append('shippingAddress', shippingAddress)
         .append('billingAddress', billingAddress)
         .appendList('basketItems', basketItems)
-        .append('callbackUrl', callbackUrl)
         .append('currency', currency)
+        .append('callbackUrl', callbackUrl)
         .getRequestString();
   }
 

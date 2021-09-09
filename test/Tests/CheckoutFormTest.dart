@@ -21,7 +21,6 @@ import '../Builder/BuyerBuilder.dart';
 
 void main() {
   test('Should_Initialize_Checkout_Form', () async {
-    print('started');
     var request = CreateCheckoutFormInitializeRequest(
         callbackUrl: 'https://marufmarket.com/api/iyzi.html',
         conversationId: '123456789',

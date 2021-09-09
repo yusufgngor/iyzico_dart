@@ -1,16 +1,16 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import '../models/IyziConfig.dart';
-import '../models/Payment/PaymentCard.dart';
-import '../models/Payment/Buyer.dart';
-import '../models/Payment/Address.dart';
-import '../models/Payment/BasketItem.dart';
-import '../models/CheckoutForm/CheckoutFormInitialize.dart';
+import '../../models/IyziConfig.dart';
+import '../../models/Payment/PaymentCard.dart';
+import '../../models/Payment/Buyer.dart';
+import '../../models/Payment/Address.dart';
+import '../../models/Payment/BasketItem.dart';
+import '../../models/CheckoutForm/CheckoutFormInitialize.dart';
 
-import '../BaseRequest.dart';
-import '../IyzipayResource.dart';
-import '../ToStringRequestBuilder.dart';
+import '../../BaseRequest.dart';
+import '../../IyzipayResource.dart';
+import '../../ToStringRequestBuilder.dart';
 
 class CreateCheckoutFormInitializeRequest extends BaseRequest {
   double price;

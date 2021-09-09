@@ -10,12 +10,12 @@ import 'models/Payment/PaymentCard.dart';
 import 'models/Payment/PaymentResource.dart';
 import 'models/Threeds/ThreedsInitialize.dart';
 import 'request/BinNumberRequest.dart';
-import 'request/CreateCheckoutFormInitializeRequest.dart';
 import 'request/CreateThreedsPaymentRequest.dart';
 import 'request/InitializeThreedsPaymentRequest.dart';
 import 'request/InstallmentInfoRequest.dart';
 import 'request/PaymentRequest.dart';
-import 'request/RetrieveCheckoutFormRequest.dart';
+import 'request/CheckoutForm/CreateCheckoutFormInitializeRequest.dart';
+import 'request/CheckoutForm/RetrieveCheckoutFormRequest.dart';
 
 class Iyzico {
   final IyziConfig configuration;

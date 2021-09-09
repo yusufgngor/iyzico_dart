@@ -1,12 +1,12 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import '../models/IyziConfig.dart';
-import '../models/CheckoutForm/CheckoutForm.dart';
+import '../../models/IyziConfig.dart';
+import '../../models/CheckoutForm/CheckoutForm.dart';
 
-import '../BaseRequest.dart';
-import '../IyzipayResource.dart';
-import '../ToStringRequestBuilder.dart';
+import '../../BaseRequest.dart';
+import '../../IyzipayResource.dart';
+import '../../ToStringRequestBuilder.dart';
 
 class RetrieveCheckoutFormRequest extends BaseRequest {
   String token;

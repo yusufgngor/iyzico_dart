@@ -47,13 +47,12 @@ class InitializeThreedsPaymentRequest extends PaymentRequest {
             callbackUrl: callbackUrl);
 
   Future<ThreedsInitialize> initialize(IyziConfig options) async {
-    print('object');
     final result = await http.post(
       Uri.parse(options.baseUrl + '/payment/3dsecure/initialize'),
       headers: IyzipayResource.getHttpHeaders(this, options),
       body: json.encode(toJson()),
     );
-    print(jsonEncode(toJson()));
+    // print(jsonEncode(toJson()));
     final resultJson = json.decode(result.body);
     return ThreedsInitialize.fromJson(resultJson);
   }
