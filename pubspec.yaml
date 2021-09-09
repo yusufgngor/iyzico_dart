@@ -1,6 +1,6 @@
 name: iyzico
 description: This package provides some Iyzico requests. You can request bin number, installment info, payment, threeds payment initialize, threeds payment create, Checkout form initialize, Checkout form retrive by using this package. 
-version: 0.1.0+1
+version: 0.1.1
 repository: https://github.com/yusufgngor/iyzico_dart
 # homepage: https://www.example.com
 
