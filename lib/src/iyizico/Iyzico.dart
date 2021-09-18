@@ -106,8 +106,14 @@ class Iyzico {
     currency,
   }) async {
     final request = InitializeThreedsPaymentRequest(
+        conversationId: conversationId,
+        locale: locale,
         price: price,
         paidPrice: paidPrice,
+        installment: installment,
+        paymentChannel: paymentChannel,
+        basketId: basketId,
+        paymentGroup: paymentGroup,
         paymentCard: paymentCard,
         buyer: buyer,
         shippingAddress: shippingAddress,
