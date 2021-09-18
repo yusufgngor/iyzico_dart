@@ -5,13 +5,10 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
-import 'package:http/http.dart';
 import 'package:iyzico/iyzico.dart';
 
 import '../MyConstants.dart';
 import 'package:test/test.dart';
-
-import '../Builder/Request/CreateCheckoutFormInitializeRequestBuilder.dart';
 
 // RUN TEST WITH FLOWWING CODE
 // flutter pub run test test/Tests/RequesFormatterTest.dart
@@ -20,8 +17,6 @@ import '../Builder/Request/CreateCheckoutFormInitializeRequestBuilder.dart';
 
 void main() {
   test('test_should_get_json_object', () async {
-    final request = Iyzico.fromConfig(configuration: options);
-
     var paymentCard = PaymentCard(
       cardHolderName: 'John Doe',
       cardNumber: '5528790000000008',
