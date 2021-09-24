@@ -1,3 +1,6 @@
+## [0.1.1+3]
+
+- Response classes can be accessible
 ## 0.1.1+2
 
 - Fixed locale while requesting 3ds 
