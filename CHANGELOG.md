@@ -1,3 +1,6 @@
+## 0.1.1+2
+
+- Fixed locale while requesting 3ds 
 ## 0.1.1+0
 
 - Currency issue fixed when requesting init Treeds 
